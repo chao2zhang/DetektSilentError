@@ -1,0 +1,10 @@
+config:
+  validation: true
+
+style:
+  MaxLineLength:
+    active: true
+    maxLineLength: 'abc'
+    excludePackageStatements: true
+    excludeImportStatements: true
+    excludeCommentStatements: false
