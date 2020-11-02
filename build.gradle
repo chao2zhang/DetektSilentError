@@ -1,10 +1,23 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.14.2-SNAPSHOT"
+    }
+}
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-    id 'io.gitlab.arturbosch.detekt' version '1.14.2'
+//    id 'io.gitlab.arturbosch.detekt' version '1.14.2'
 }
+
+apply plugin: 'io.gitlab.arturbosch.detekt'
 
 repositories {
     jcenter()
+    mavenLocal()
 }
 
 detekt {
